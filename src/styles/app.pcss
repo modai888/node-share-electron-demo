@@ -2,10 +2,12 @@
 @import "buttons.pcss";
 @import "recent-chats.pcss";
 @import "components/index.pcss";
+@import "iconfont.pcss";
+@import "sidebar.pcss";
 
 .app__sidebar {
-  background-color: var(--main-sidebar);
-  padding-top: var(--title-bar-height);
+  background-color: color(var(--main-sidebar) alpha(-10%));
+  padding-top: calc(var(--title-bar-height) + 8px);
 }
 
 .page__sidebar {
