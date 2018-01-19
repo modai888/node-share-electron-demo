@@ -14,14 +14,14 @@
                     <div class="sidebar__content">
                         <ul class="list-group recent-chats">
                             <li class="list-group-item chat-friend">
-                                <img class="chat-friend__avator" src="../assets/nodejs.png">
+                                <img class="chat-friend__avator" src="../assets/3.jpg">
                                 <div class="chat-friend__info">
                                     <strong class="chat-friend__name">天天向上</strong>
                                     <p class="chat-friend__msg">Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </li>
                             <li class="list-group-item chat-friend">
-                                <img class="chat-friend__avator" src="../assets/nodejs.png">
+                                <img class="chat-friend__avator" src="../assets/2.jpg">
                                 <div class="chat-friend__info">
                                     <strong class="chat-friend__name">快乐的小屋</strong>
                                     <p class="chat-friend__msg">Lorem ipsum dolor sit amet.</p>
@@ -34,10 +34,9 @@
                     <header class="page__header">
                         微信聊天窗口
                     </header>
-                    <resizable-pane :is-stack="true" class="page__body">
-                        <pane :free="true" class="page__chart">111</pane>
-                        <pane class="page__input">222</pane>
-                    </resizable-pane>
+                    <div class="page__body">
+                        <chat-message></chat-message>
+                    </div>
                 </pane>
             </resizable-pane>
         </div>
@@ -47,10 +46,11 @@
 <script>
     import ResizablePane from './shared/resizable-pane/resizable-pane'
     import Pane from './shared/resizable-pane/pane'
+    import ChatMessage from './HomePage/ChatMessage'
 
     export default {
         name: "home-page",
-        components: { ResizablePane, Pane }
+        components: { ResizablePane, Pane, ChatMessage }
     }
 </script>
 
