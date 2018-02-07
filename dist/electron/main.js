@@ -2563,6 +2563,7 @@ function createWindow() {
         width: 1000,
         minWidth: 800,
         minHeight: 600,
+        frame: false,
         titleBarStyle: 'hiddenInset'
     });
 
